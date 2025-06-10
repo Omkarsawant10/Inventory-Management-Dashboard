@@ -1,4 +1,4 @@
-// ProductModal.jsx
+
 import React from 'react';
 
 export default function ProductModal({ form, setForm, editId, handleSubmit, onClose }) {

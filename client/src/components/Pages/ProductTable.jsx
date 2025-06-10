@@ -1,4 +1,4 @@
-// ProductTable.jsx
+
 import React from 'react';
 import { MdOutlineEdit, MdDelete } from "react-icons/md";
 

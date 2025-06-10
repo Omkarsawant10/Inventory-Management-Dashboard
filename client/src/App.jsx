@@ -6,8 +6,6 @@ import {
 } from "react-router-dom";
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
-
-// ✅ Import ToastContainer and styles
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dashboard from './components/Pages/Dashboard';
@@ -30,8 +28,6 @@ function App() {
           />
         </Routes>
       </Router>
-
-      {/* ✅ Add ToastContainer outside Routes */}
       <ToastContainer
         position="top-center"
         autoClose={3000}
