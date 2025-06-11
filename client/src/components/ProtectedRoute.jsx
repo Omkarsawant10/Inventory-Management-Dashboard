@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import axios from 'axios';
+import { PRODUCT_API_END_POINT } from '../utils/constants';
 
 const ProtectedRoute = ({ children }) => {
   const [auth, setAuth] = useState(null);
@@ -8,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        await axios.get('/api/product/get', { withCredentials: true });
+        await axios.get(`${PRODUCT_API_END_POINT}/get`, { withCredentials: true });
         setAuth(true);
       } catch (err) {
         console.log(err)
